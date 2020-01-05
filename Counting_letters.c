@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string>
-#include <conio.h>
 
 int massive[27] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
@@ -211,7 +210,6 @@ int main(int argc, char* argv[])
 
     if((fp = fopen(filename, "r")) == NULL){
         printf("ERROR!\n");
-        getch();
         exit(1);
     }
 
@@ -223,7 +221,6 @@ int main(int argc, char* argv[])
 
     print();
     fclose(fp);
-    getch();
     return 0;
 }
 
