@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string>
 
 int massive[27] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
@@ -206,7 +205,7 @@ int main(int argc, char* argv[])
     FILE *fp;
 
 	printf("Input filename:");
-    gets(filename);
+    scanf("%s", &filename);
 
     if((fp = fopen(filename, "r")) == NULL){
         printf("ERROR!\n");
@@ -223,4 +222,3 @@ int main(int argc, char* argv[])
     fclose(fp);
     return 0;
 }
-
